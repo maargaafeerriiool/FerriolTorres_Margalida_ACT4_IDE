@@ -1,0 +1,22 @@
+@startuml
+
+class Persona {
+  -nom: String
+  -edat: int
+  +saludar(): void
+}
+
+class Alumne {
+  -curs: String
+  +estudiar(): void
+}
+
+class Professor {
+  -departament: String
+  +explicar(): void
+}
+
+Persona <|-- Alumne
+Persona <|-- Professor
+
+@enduml
